@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://admin-zumrud:Test123@cluster0.f14wlq0.mongodb.net/todolistDB", { useNewUrlParser: true })
 
 const ItemsSchema = new mongoose.Schema({
     name: String
